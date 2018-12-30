@@ -35,10 +35,5 @@ DeKleur=${Kleur[$((RANDOM%aantal_kleuren))]}
 DeKaart=${Kaart[$((RANDOM%aantal_kaarten))]}
 echo ${DeKleur} ${DeKaart}
 
-#echo -n "${denomination[$((RANDOM%num_denominations))]} of "
-#echo ${suite[$((RANDOM%num_suites))]}
-#
-#
-#
 
 exit 0
