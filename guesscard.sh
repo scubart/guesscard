@@ -1,11 +1,16 @@
 #!/bin/bash
 
+#
+# "Guess the card" game -- git practice
+#
 
 # Define list of suites
 Suites="Clubs
 Diamonds
 Hearts
 Spades"
+
+
 
 # Define list of cards
 Denominations="2
