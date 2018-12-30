@@ -1,14 +1,14 @@
 #!/bin/bash
 
 
-# Define list of suites
-Suites="Clubs
-Diamonds
-Hearts
-Spades"
+# Kleurenlijst
+Kleuren="Klaver
+Ruiten
+Harten
+Schoppen"
 
-# Define list of cards
-Denominations="2
+# Kaartenlijst
+Kaarten="2
 3
 4
 5
@@ -17,22 +17,23 @@ Denominations="2
 8
 9
 10
-Jack
-Queen
-King
-Ace"
+Boer
+Dame
+Heer
+Aas"
 
-# Convert to arrays
-suite=($Suites) 
-denomination=($Denominations)
+# Array opbouwen
+Kleur=($Kleuren) 
+Kaart=($Kaarten)
 
-# Count elements in arrays
-num_suites=${#suite[*]} 
-num_denominations=${#denomination[*]}
+# Elementen tellen
+aantal_kleuren=${#Kleur[*]} 
+aantal_kaarten=${#Kaart[*]}
 
-# Output a random card
-echo -n "${denomination[$((RANDOM%num_denominations))]} of "
-echo ${suite[$((RANDOM%num_suites))]}
+# Willekeurige kaart tonen
+echo "'${Kaart[$((RANDOM%aantal_kaarten))]} ${kleur[$((RANDOM%aantal_kleuren))]}"
+#echo -n "${denomination[$((RANDOM%num_denominations))]} of "
+#echo ${suite[$((RANDOM%num_suites))]}
 
 
 exit 0
