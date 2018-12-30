@@ -39,8 +39,7 @@ num_denominations=${#denomination[*]}
 Suite=${suite[$((RANDOM%num_suites))]}
 Card=${denomination[$((RANDOM%num_denominations))]}
 echo "${Card} of ${Suite}"
-#echo -n "${denomination[$((RANDOM%num_denominations))]} of "
-#echo ${suite[$((RANDOM%num_suites))]}
+
 
 
 exit 0
