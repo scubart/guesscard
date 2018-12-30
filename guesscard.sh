@@ -35,4 +35,5 @@ DeKaart=${Kaart[$((RANDOM%aantal_kaarten))]}
 
 echo ${DeKleur} ${DeKaart}
 
+echo That''s all folks!
 exit 0
