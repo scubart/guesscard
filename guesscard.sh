@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # Kleurenlijst
 Kleuren="Klaver
 Ruiten
@@ -33,7 +32,19 @@ aantal_kaarten=${#Kaart[*]}
 # Willekeurige kaart tonen
 DeKleur=${Kleur[$((RANDOM%aantal_kleuren))]}
 DeKaart=${Kaart[$((RANDOM%aantal_kaarten))]}
+<<<<<<< HEAD
 echo ${DeKleur} ${DeKaart}
 
+||||||| merged common ancestors
+echo ${DeKleur} ${DeKaart}
 
+#echo -n "${denomination[$((RANDOM%num_denominations))]} of "
+#echo ${suite[$((RANDOM%num_suites))]}
+
+=======
+
+echo ${DeKleur} ${DeKaart}
+>>>>>>> code_cleanup
+
+echo That''s all folks!
 exit 0
