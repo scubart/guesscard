@@ -31,7 +31,10 @@ aantal_kleuren=${#Kleur[*]}
 aantal_kaarten=${#Kaart[*]}
 
 # Willekeurige kaart tonen
-echo "'${Kaart[$((RANDOM%aantal_kaarten))]} ${kleur[$((RANDOM%aantal_kleuren))]}"
+DeKleur=${Kleur[$((RANDOM%aantal_kleuren))]}
+DeKaart=${Kaart[$((RANDOM%aantal_kaarten))]}
+echo ${DeKleur} ${DeKaart}
+
 #echo -n "${denomination[$((RANDOM%num_denominations))]} of "
 #echo ${suite[$((RANDOM%num_suites))]}
 
