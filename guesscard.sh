@@ -36,8 +36,11 @@ num_suites=${#suite[*]}
 num_denominations=${#denomination[*]}
 
 # Output a random card
-echo -n "${denomination[$((RANDOM%num_denominations))]} of "
-echo ${suite[$((RANDOM%num_suites))]}
+Suite=${suite[$((RANDOM%num_suites))]}
+Card=${denomination[$((RANDOM%num_denominations))]}
+echo "${Card} of ${Suite}"
+#echo -n "${denomination[$((RANDOM%num_denominations))]} of "
+#echo ${suite[$((RANDOM%num_suites))]}
 
 
 exit 0
