@@ -1,13 +1,13 @@
 #!/bin/bash
 
 
-# Pick a card, any card.
-
+# Define list of suites
 Suites="Clubs
 Diamonds
 Hearts
 Spades"
 
+# Define list of cards
 Denominations="2
 3
 4
@@ -22,12 +22,15 @@ Queen
 King
 Ace"
 
-suite=($Suites)                # Read into array variable.
+# Convert to arrays
+suite=($Suites) 
 denomination=($Denominations)
 
-num_suites=${#suite[*]}        # Count how many elements.
+# Count elements in arrays
+num_suites=${#suite[*]} 
 num_denominations=${#denomination[*]}
 
+# Output a random card
 echo -n "${denomination[$((RANDOM%num_denominations))]} of "
 echo ${suite[$((RANDOM%num_suites))]}
 
