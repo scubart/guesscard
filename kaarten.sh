@@ -15,7 +15,7 @@ Boer
 Dame
 Heer
 Aas
-Joker"
+Test"
 
 # Array opbouwen
 Kaart=($Kaarten)
