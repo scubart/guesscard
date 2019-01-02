@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Kaartenlijst
-Kaarten="2
+Kaarten="Joker
+2
 3
 4
 5
