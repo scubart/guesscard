@@ -13,7 +13,8 @@ Kaarten="2
 Boer
 Dame
 Heer
-Aas"
+Aas
+Joker"
 
 # Array opbouwen
 Kaart=($Kaarten)
