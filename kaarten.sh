@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Kaartenlijst
-Kaarten="Joker
-2
+Kaarten="2
 3
 4
 5
@@ -15,7 +14,7 @@ Boer
 Dame
 Heer
 Aas
-Test"
+Joker"
 
 # Array opbouwen
 Kaart=($Kaarten)
